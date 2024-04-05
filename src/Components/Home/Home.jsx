@@ -20,8 +20,8 @@ function Home() {
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
  
-          <h3 >Virtual Healthcare when You need It Most </h3>
-          <p > For Anyone , Anywhere , at Anywhere</p>
+          <h3 >SafeSteps</h3>
+          <p>For Anyone , Anywhere , at Anywhere</p>
           <button>Join Now</button>
         </div>
       </div>

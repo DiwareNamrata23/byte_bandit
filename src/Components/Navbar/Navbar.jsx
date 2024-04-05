@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 import "./Navbar.css";
 
 function Navbar() {
   // To Manage State when Side Navbar is open or not
   const [isBurgerActive, setisBurgerActive] = useState(false);
+  const { loginWithRedirect } = useAuth0();
+  const { logout } = useAuth0();
+  const { user, isAuthenticated, isLoading } = useAuth0();
 
   // For Side Navbar opening animation
   let counter = 0;
@@ -129,13 +133,39 @@ function Navbar() {
             Contact Us
           </li>
         </NavLink>
-
-
-        <NavLink >
+            {
+              isAuthenticated && (
+                <NavLink>
+                  <li>
+                    <p>{user.name}</p>
+                  </li>
+                </NavLink>
+              )
+            }
+            {
+              isAuthenticated ? (<NavLink >
+              <li
+                onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}
+                style={
+                  isPhone
+                    ? isBurgerActive
+                      ? { transform: `translateX(0%)` }
+                      : { transform: `translateX(${100 * ++counter}%)` }
+                    : {}
+                }
+              >
+                <i
+                  className="fa-solid fa-address-book"
+                  style={{ color: "#ffffff" }}
+                ></i>
+                Logout
+              </li>
+            </NavLink>
+              )
+              : (
+                <NavLink >
           <li
-            onClick={() => {
-              setisBurgerActive(false);
-            }}
+            onClick={() => loginWithRedirect()}
             style={
               isPhone
                 ? isBurgerActive
@@ -148,29 +178,11 @@ function Navbar() {
               className="fa-solid fa-address-book"
               style={{ color: "#ffffff" }}
             ></i>
-            Sign Up
+            Login
           </li>
         </NavLink>
-        <NavLink >
-          <li
-            onClick={() => {
-              setisBurgerActive(false);
-            }}
-            style={
-              isPhone
-                ? isBurgerActive
-                  ? { transform: `translateX(0%)` }
-                  : { transform: `translateX(${100 * ++counter}%)` }
-                : {}
+              )
             }
-          >
-            <i
-              className="fa-solid fa-address-book"
-              style={{ color: "#ffffff" }}
-            ></i>
-            Sign In
-          </li>
-        </NavLink>
       </ul>
 
       {/* Burger to open Side Navbar when devive is Phone */}
@@ -210,8 +222,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
-
-
-
