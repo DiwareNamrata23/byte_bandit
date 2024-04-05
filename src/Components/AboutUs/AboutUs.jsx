@@ -1,50 +1,77 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./AboutUs.css";
-import 'aos/dist/aos.css';
-import AOS from 'aos';
+import "aos/dist/aos.css";
+import AOS from "aos";
+import Draggable from "react-draggable";
 
 function AboutUs() {
   useEffect(() => {
     AOS.init({
       offset: 250,
-      delay: 180
+      delay: 180,
     });
   }, []); // Empty dependency array ensures AOS.init() runs only once after component mounting
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 2 ? 0 : prevIndex + 1));
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? 2 : prevIndex - 1));
+  };
+
   return (
-    <>
-   
-      <div class="slider-frame">
-            <div class="slide-images">
-                    <div class="img-container1">
-                        
-                    </div>
-                    <div class="img-container2">
-                        
-                    </div>
-                    <div class="img-container3">
-                        
-                    </div>
-            </div>
-            
-        
+    <div>
+    <div className="slider-container">
+      <button className="arrow prev" onClick={prevSlide}>&#10094;</button>
+      <div className="card-slider">
+        <Draggable axis="x">
+          <div
+            className={`card ${currentIndex === 0 ? "active" : ""}`}
+          >
+           <h1> Active Emergency</h1>
+         
+           <p>Call 0-1-5 for emergencies.</p>
+           <button>0-1-5</button>
+          </div>
+        </Draggable>
+        <Draggable axis="x">
+          <div 
+            className={`card ${currentIndex === 1 ? "active" : ""}`}
+          >
+            <h1>Ambulance</h1>
+            <p>Call 0-1-5 for emergencies.</p>
+           <button>0-1-5</button>
+          </div>
+        </Draggable>
+        <Draggable axis="x">
+          <div
+            className={`card ${currentIndex === 2 ? "active" : ""}`}
+          >
+           <h1> Card 3</h1>
+           <p>Call 0-1-5 for emergencies.</p>
+           <button>0-1-5</button>
+          </div>
+        </Draggable>
+      </div>
+      <button className="arrow next" onClick={nextSlide}>&#10095;</button>
+      
     </div>
-    <div className="patient">
-      <h1>About Us</h1>
-    <p>dnsjdnjsanjnajcnznnxz</p>
-    <p>dnsjdnjsanjnajcnznnxz</p>
-    <p>dnsjdnjsanjnajcnznnxz</p>
-    <p>dnsjdnjsanjnajcnznnxz</p>
-    <p>dnsjdnjsanjnajcnznnxz</p>
-    <p>dnsjdnjsanjnajcnznnxz</p>
-    <p>dnsjdnjsanjnajcnznnxz</p>
-    <p>dnsjdnjsanjnajcnznnxz</p>
-    <p>dnsjdnjsanjnajcnznnxz</p>
-    <p>dnsjdnjsanjnajcnznnxz</p></div>
-</>
+    <div>
+    <button className="button4">Button 1</button>
+    <button className="button5">Button 2</button>
+    <button className="button6">Button 3</button>
+    <button className="button7">Button 4</button>
+  </div>
+</div>
+
   );
 }
+
 export default AboutUs;
+
 
 
 

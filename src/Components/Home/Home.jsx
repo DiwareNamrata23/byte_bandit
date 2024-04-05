@@ -14,15 +14,14 @@ function Home() {
   return (
     <>
       <div className="mainpage">
+   
         <div className="landimg"></div>
         <div className="head" data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
  
           <h3 >Virtual Healthcare when You need It Most </h3>
-          <p data-aos="fade-right"
- 
-     data-aos-easing="ease-in-sine"> For Anyone , Anywhere , at Anywhere</p>
+          <p > For Anyone , Anywhere , at Anywhere</p>
           <button>Join Now</button>
         </div>
       </div>
@@ -77,6 +76,7 @@ function Home() {
           </div>
         </div>
       </div>
+      
     </>
   );
 }
