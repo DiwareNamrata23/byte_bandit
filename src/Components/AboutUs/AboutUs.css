@@ -37,6 +37,7 @@
   position: relative; 
 }
 
+
 .card h1 {
   color: white;
   margin: 0; /* Remove default margin */
@@ -84,14 +85,31 @@
 .next {
   margin-left: -20px;
 }
+.secure{
+  height: 200px;
+}
+
+
+.button4 {
+    height: 60px;
+    width: 60px;
+}
+
+.button5,
+.button6 {
+    height: 150px;
+    width: 150px;
+}
+
 .button4,
 .button5,
-.button6,
-.button7 {
+.button6
+{
   margin-left: 20px;
-
+  background: url("ambulance.jpeg");
+  background-size: cover;
   /* background: #0078ff; */
-  background:  #b86bec;
+  /* background:  #b86bec; */
   border: none;
   cursor: pointer;
   border: none;

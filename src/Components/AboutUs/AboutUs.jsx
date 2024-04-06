@@ -43,7 +43,7 @@ function AboutUs() {
           >
             <h1>Ambulance</h1>
             <p>Call 0-1-5 for emergencies.</p>
-           <button>0-1-5</button>
+           <button >0-1-5</button>
           </div>
         </Draggable>
         <Draggable axis="x">
@@ -59,12 +59,12 @@ function AboutUs() {
       <button className="arrow next" onClick={nextSlide}>&#10095;</button>
       
     </div>
-    <div>
-    <button className="button4">Button 1</button>
-    <button className="button5">Button 2</button>
-    <button className="button6">Button 3</button>
-    <button className="button7">Button 4</button>
-  </div>
+    {/* <div className="secure">
+    <button className="button4"></button>
+    <button className="button5"></button>
+    <button className="button6"></button>
+    {/* <button className="button7"></button> 
+  </div> */}
 </div>
 
   );

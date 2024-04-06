@@ -17,7 +17,8 @@
   
   footer { 
       
-    
+    margin-bottom: -20px;
+
     width: 100%; /* Occupy full width */
     height: 36vh;
     background-color: #252525;
