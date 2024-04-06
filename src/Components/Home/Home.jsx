@@ -22,7 +22,7 @@ function Home() {
  
           <h3 >SafeSteps</h3>
           <p>For Anyone , Anywhere , at Anywhere</p>
-          <button>Join Now</button>
+          <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, placeat.</p>
         </div>
       </div>
       <div className="works">
@@ -36,7 +36,7 @@ function Home() {
           <table border="1">
             <tr className="tab">
               <th id="image"></th>
-              <th id="column">Column 2</th>
+              <th id="column">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequuntur deserunt libero sunt excepturi, doloremque adipisci iste non similique explicabo nihil temporibus vitae totam deleniti assumenda animi voluptas incidunt maiores rem eius beatae. Pariatur cum quis corrupti voluptatibus! Ex molestiae veniam dolorem placeat aut, tempore maiores hic consectetur dicta eum modi exercitationem? Culpa optio necessitatibus, animi sed odio quas molestiae perferendis odit inventore. Minima optio omnis sit ullam voluptatem aliquid, accusamus non vero, magni deserunt rem, corrupti esse quos quo porro repudiandae cupiditate harum tenetur quam fuga numquam labore voluptate. Laborum distinctio, aspernatur accusantium commodi ipsa fugit! Est, nesciunt fugit.</th>
             </tr>
           </table>
         </div>

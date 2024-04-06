@@ -7,9 +7,11 @@ import Footer from './Components/Footer/Footer';
 import AboutUs from './Components/AboutUs/AboutUs';
 import Home from './Components/Home/Home';
 import ContactPage from'./Components/ContactPage/ContactPage';
-
+import { useEffect } from 'react'; // Import useEffect
 function App() {
-  
+  useEffect(() => {
+    document.title = 'SheildHer'; // Set document title
+  }, []);
   return(
    <>
 
