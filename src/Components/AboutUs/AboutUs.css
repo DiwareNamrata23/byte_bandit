@@ -1,14 +1,67 @@
-.patient {
-  color: rgb(33, 69, 20);
+/* .patient {
+  color: rgb(247, 250, 246);
   margin-left: 550px;
-  margin-top: 50px;
-  font-size: 40px;
-
+  margin-top: 80px;
+  font-size: 100px;
+  font-weight: 800px;
 }
 .patient p{
   animation-name: bounce;
+} */
+/* AboutUs.css */
+.joinus{
+  background: url('Pink\ Blue\ Simple\ Modern\ Illustrative\ \ Women\'s\ Day\ Instagram\ Post.png');
+  height: 800px;
+  margin-top: -46px;
+}
+.joinus .sheild {
+  /* background-image: url('phone.png');
+  background-size: contain;
+  background-position: center;
+  max-width: 15%;
+  height: 30rem;
+  margin-left: 150px; */
+  /* Additional styles for the div */
+}
+.sheild p{
+  margin-left: 450px;
+  width:400px;
+  color: rgb(55, 52, 55);
+}
+/* Additional CSS styles for other elements if needed */
+
+/* Button styles */
+.download-button {
+  display: inline-block;
+  padding: 12px 30px; /* Increased padding for larger button */
+  background-color: rgb(48, 162, 207);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease;
+  margin-left: 500px;
+     margin-top: 26px;
+
 }
 
+.download-button:hover {
+  background-color: #26b1d8; /* Darker green on hover */
+}
+
+
+.joinus h3{
+  color: rgb(246, 250, 246);
+  margin-left: 400px;
+  margin-top: 50px;
+  font-size: 60px;
+  padding-top: 30px;
+  /* font-family: cursive; */
+}
 .slider-container {
   display: flex;
   align-items: center;

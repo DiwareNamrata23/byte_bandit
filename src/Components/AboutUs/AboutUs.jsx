@@ -1,74 +1,60 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./AboutUs.css";
-import "aos/dist/aos.css";
-import AOS from "aos";
-import Draggable from "react-draggable";
+
 
 function AboutUs() {
-  useEffect(() => {
-    AOS.init({
-      offset: 250,
-      delay: 180,
-    });
-  }, []); // Empty dependency array ensures AOS.init() runs only once after component mounting
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 2 ? 0 : prevIndex + 1));
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? 2 : prevIndex - 1));
-  };
+  
+  
 
   return (
-    <div>
-    <div className="slider-container">
-      <button className="arrow prev" onClick={prevSlide}>&#10094;</button>
-      <div className="card-slider">
-        <Draggable axis="x">
-          <div
-            className={`card ${currentIndex === 0 ? "active" : ""}`}
-          >
-           <h1> Active Emergency</h1>
-         
-           <p>Call 0-1-5 for emergencies.</p>
-           <button>0-1-5</button>
-          </div>
-        </Draggable>
-        <Draggable axis="x">
-          <div 
-            className={`card ${currentIndex === 1 ? "active" : ""}`}
-          >
-            <h1>Ambulance</h1>
-            <p>Call 0-1-5 for emergencies.</p>
-           <button >0-1-5</button>
-          </div>
-        </Draggable>
-        <Draggable axis="x">
-          <div
-            className={`card ${currentIndex === 2 ? "active" : ""}`}
-          >
-           <h1> Card 3</h1>
-           <p>Call 0-1-5 for emergencies.</p>
-           <button>0-1-5</button>
-          </div>
-        </Draggable>
-      </div>
-      <button className="arrow next" onClick={nextSlide}>&#10095;</button>
-      
+    <>
+    <div className="joinus"><h3>Join Us on the Mobile</h3>
+    <div className="sheild">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti expedita architecto, voluptatum cum maiores, distinctio repudiandae vero nam libero alias eum aliquid. Quis animi ratione labore, laboriosam incidunt ea </p>
+    <button className="download-button">Download Now</button>
     </div>
-    {/* <div className="secure">
-    <button className="button4"></button>
-    <button className="button5"></button>
-    <button className="button6"></button>
-    {/* <button className="button7"></button> 
-  </div> */}
-</div>
-
+    
+    
+    </div>
+    <div className="meet">
+    <h3>Meet Our Team</h3>
+    <div className="flipcard">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front"></div>
+          <div class="flip-card-back">
+            <h1>Namrata Diware</h1> 
+            <p>Computer Science Engineer</p> 
+            <p>I'm a 2nd year Btech student pursuing Engineering in Shri RamdeoBaba College of Engineering and Management </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front2"></div>
+          <div class="flip-card-back">
+            <h1>Prathamesh Rokade</h1> 
+            <p>Computer Science Engineer</p> 
+            <p>I'm a 2nd year Btech student pursuing Engineering in Shri RamdeoBaba College of Engineering and Management </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front3"></div>
+          <div class="flip-card-back">
+            <h1>Pranay Rokade</h1> 
+            <p>Computer Science Engineer</p> 
+            <p>I'm a 2nd year Btech student pursuing Engineering in Shri RamdeoBaba College of Engineering and Management </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </>
   );
-}
+};
+
 
 export default AboutUs;
 

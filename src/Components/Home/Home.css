@@ -79,7 +79,7 @@ top: 0;
 }
 .head p{
   width: 536px;
-  font-size: 30px;
+  font-size: 25px;
   color:  rgb(33, 69, 20);
   margin-left: -100px;
 }
@@ -258,6 +258,15 @@ button:active {
   width: 25%;
   float: left;
 } */
+
+
+.feature #feat{
+  font-size: 60px;
+  margin-top: 70px;
+  color:rgb(33, 69, 20);
+  margin-left: 550px;
+  font-weight:bolder;
+}
  .meet{
   font-size: 60px;
   color:rgb(33, 69, 20);
