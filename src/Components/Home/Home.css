@@ -152,11 +152,17 @@ button:active {
 .works h3{
   font-size: 60px;
   color:rgb(33, 69, 20);
-  margin-left: 500px;
+  margin-left: 580px;
 }
-.works pre{
+.works p{
   color:rgb(33, 69, 20);
-  margin-left: 450px;
+  margin-left: 0px;
+  font-size: 30px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
  
 }
 .table{
@@ -269,7 +275,7 @@ button:active {
 }
  .meet{
   font-size: 60px;
-  color:rgb(33, 69, 20);
+  color:rgb(18, 18, 18);
   margin-left: 500px;
  }
  body {
@@ -280,7 +286,7 @@ button:active {
   margin-left: -500px;
   padding: 20px;
   justify-content:space-around;
-  background-color: rgb(33, 69, 20);
+  background-color: rgb(243, 207, 247);
  height: 400px;
 }
 

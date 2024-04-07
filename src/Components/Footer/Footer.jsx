@@ -82,7 +82,6 @@ function Footer() {
           <span>{email}</span>
         </div>
         <div className="right-reserved">
-          <span id="strongcommunity"># Strong-Community</span>
           <span>
             &copy; All rights reserved by{" "}
             <span id="footer-brc">Byte Banditz</span>

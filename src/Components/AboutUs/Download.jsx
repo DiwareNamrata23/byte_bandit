@@ -1,20 +1,20 @@
 import React from "react";
-import "./AboutUs.css";
+import "./Download.css";
 
 
-function AboutUs() {
-  
-  
-
-  return (
+function Download() {
+   return (
     <>
     <div className="joinus"><h3>Join Us on the Mobile</h3>
     <div className="sheild">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti expedita architecto, voluptatum cum maiores, distinctio repudiandae vero nam libero alias eum aliquid. Quis animi ratione labore, laboriosam incidunt ea </p>
-    <button className="download-button">Download Now</button>
-    </div>
-    
-    
+      <p>Ready to take control of your safety? Download ShieldHer
+         and discover how technology can empower you to live freely
+          and fearlessly. Available on both iOS and Android platforms, 
+          ShieldHer is just a tap away from becoming your trusted safety companion.</p>
+          <a href="https://drive.google.com/file/d/1tEdz0d6l70O9uDjRZzpHKsav-PiPmlan/view" target="_blank" rel="noopener noreferrer" className="download-button">
+            Download Now
+          </a>
+    </div>  
     </div>
     <div className="meet">
     <h3>Meet Our Team</h3>
@@ -56,35 +56,5 @@ function AboutUs() {
 };
 
 
-export default AboutUs;
-
-
-
-
-
-
-// import React from "react";
-// import "./AboutUs.css";
-
-// import Data from "./data.json";
-
-// function AboutUs() {
-//   return (
-//     <div className="Home-AboutUs">
-//       <div className="image-carousel">
-//         <div className="image image1"></div>
-//         <div className="image image2"></div>
-//         <div className="image image3"></div>
-//         {/* Add more image divs as needed */}
-//       </div>
-//       <div className="text-content">
-//         <h2>WHAT IS BRC? 🤔</h2>
-//         <p>{Data["aboutus"]["whatIsBrc"][0]}</p>
-//         <p>{Data["aboutus"]["whatIsBrc"][1]}</p>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default AboutUs;
+export default Download;
 

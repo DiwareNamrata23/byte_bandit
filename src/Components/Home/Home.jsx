@@ -30,28 +30,32 @@ function Home() {
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
  
-          <h3 >SafeSteps</h3>
-          <p>"Empowering Women's for a Safer Tomorrow"
-</p>
+          <h3 >ShieldHer</h3>
+          <p>Safety Simplified, Your Trusted Companion</p>
           <p id="para">
 "Empower yourself with our women safety app, ensuring peace of mind wherever you go. Instant alerts, location sharing, and community support - all at your fingertips for a safer journey ahead."</p>
         </div>
       </div>
       <div className="works">
-        <h3>How It Works</h3> 
-        <pre>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</pre>
-        <pre>Est vel obcaecati quam ratione aperiam, reprehenderit, sint placeat</pre>
-        <pre>quae sed earum enim quibusdam cupiditate illo omnis repudiandae </pre>
-        <pre>pariatur nesciunt aliquam facere.</pre>
+        <h3>About Us</h3> 
+        <p>Welcome to ShieldHer - Safety Simplified, Your Trusted Companion. 
+          At ShieldHer, we are dedicated to providing women with the tools 
+          and resources they need to feel safe and empowered in every aspect 
+          of their lives. Our mission is to create a world where women can move
+           freely without fear, where their voices are heard and respected. 
+          With our innovative app, we offer a comprehensive suite of safety
+           features designed to give women peace of mind wherever they go.Join us in
+            our commitment to building a safer, more inclusive world for women 
+            everywhere. Together, we can make a difference.</p>
         <br/>  <br/>
-        <div className="table">
+        {/* <div className="table">
           <table border="1">
             <tr className="tab">
               <th id="image"></th>
               <th id="column">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequuntur deserunt libero sunt excepturi, doloremque adipisci iste non similique explicabo nihil temporibus vitae totam deleniti assumenda animi voluptas incidunt maiores rem eius beatae. Pariatur cum quis corrupti voluptatibus! Ex molestiae veniam dolorem placeat aut, tempore maiores hic consectetur dicta eum modi exercitationem? Culpa optio necessitatibus, animi sed odio quas molestiae perferendis odit inventore. Minima optio omnis sit ullam voluptatem aliquid, accusamus non vero, magni deserunt rem, corrupti esse quos quo porro repudiandae cupiditate harum tenetur quam fuga numquam labore voluptate. Laborum distinctio, aspernatur accusantium commodi ipsa fugit! Est, nesciunt fugit.</th>
             </tr>
           </table>
-        </div>
+        </div> */}
       </div>
 
       <div className="feature"><p id="feat">Features</p>
@@ -62,28 +66,25 @@ function Home() {
           <div
             className={`card ${currentIndex === 0 ? "active" : ""}`}
           >
-           <h1> Active Emergency</h1>
+           <h1>Emergency Helplines</h1>
          
-           <p>Call 0-1-5 for emergencies.</p>
-           <button>0-1-5</button>
+           <p>All helplines in a single App</p>
           </div>
         </Draggable>
         <Draggable axis="x">
           <div 
             className={`card ${currentIndex === 1 ? "active" : ""}`}
           >
-            <h1>Ambulance</h1>
-            <p>Call 0-1-5 for emergencies.</p>
-           <button >0-1-5</button>
+            <h1>Nearby Facilities</h1>
+            <p>Hospitals,Police Stations,Pharmacy,etc.</p>
           </div>
         </Draggable>
         <Draggable axis="x">
           <div
             className={`card ${currentIndex === 2 ? "active" : ""}`}
           >
-           <h1>Hospital</h1>
-           <p>Call 0-1-5 for emergencies.</p>
-           <button>0-1-5</button>
+           <h1>Offline Facilities</h1>
+           <p>One can access helplines offline</p>
           </div>
         </Draggable>
       </div>

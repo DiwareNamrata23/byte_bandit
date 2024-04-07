@@ -51,7 +51,7 @@ function Navbar() {
             Home
           </li>
         </NavLink>
-        <NavLink to="/about">
+        <NavLink to="/download">
           <li
             onClick={() => {
               setisBurgerActive(false);
@@ -68,7 +68,7 @@ function Navbar() {
               className="fa-solid fa-calendar-check"
               style={{ color: "#ffffff" }}
             ></i>
-           About
+           Download
           </li>
         </NavLink>
         {/* <NavLink to="/team">
